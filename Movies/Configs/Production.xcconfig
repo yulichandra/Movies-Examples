@@ -1,4 +1,5 @@
 #include "Common.xcconfig"
+#include "../../Pods/Target Support Files/Pods-Movies/Pods-Movies.production.xcconfig"
 
 PRODUCT_BUNDLE_IDENTIFIER = id.yuli.movies
 BUNDLE_DISPLAY_NAME = Movies
