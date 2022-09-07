@@ -13,7 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+#if DEBUG
+    print("This is the STDevelopment scheme, using Development configuration with Development.xcconfig")
+  #endif
+        
+  #if RELEASE
+    print("This is the STProduction scheme, using Production configuration with Production.xcconfig")
+  #endif
+        print(Bundle.main.bundleIdentifier)
         return true
     }
 
