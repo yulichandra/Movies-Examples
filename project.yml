@@ -1,0 +1,17 @@
+name: Movies
+
+options:
+  minimumXcodeGenVersion: 2.26.0
+  groupSortPosition: top
+  generateEmptyDirectories: true
+  deploymentTarget:
+    iOS: "13.0"
+  postGenCommand: pod install
+
+fileGroups:
+  - .gitignore
+  - xcodegen
+
+include:
+  - path: xcodegen/ios.yml
+    relativePaths: false

@@ -1,0 +1,44 @@
+include:
+  - path: ios_settings.yml
+    relativePaths: false
+  - path: dev.env.yml
+    relativePaths: false
+  - path: prod.env.yml
+    relativePaths: false
+
+targetTemplates:
+  BaseApp:
+    type: application
+    platform: iOS
+    sources: 
+      - path: Movies
+    info:
+      path: Movies/SupportFiles/Info.plist
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: 1
+
+targets:
+  Movies Dev:
+    templates:
+      - BaseApp
+    scheme:
+      gatherCoverageData: true
+    settings:
+      configs:
+        Debug:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+      groups:
+        - development
+        
+  Movies:
+    templates:
+      - BaseApp
+    settings:
+      configs:
+        Debug:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG PROD
+        Release:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: PROD
+      groups:
+        - production

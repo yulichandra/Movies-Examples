@@ -1,6 +1,0 @@
-#include "Common.xcconfig"
-#include "../../Pods/Target Support Files/Pods-Movies/Pods-Movies.development.xcconfig"
-
-PRODUCT_BUNDLE_IDENTIFIER = id.yuli.movies.dev
-BUNDLE_DISPLAY_NAME = Movies Dev
-SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG
