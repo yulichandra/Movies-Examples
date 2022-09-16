@@ -14,6 +14,9 @@ targetTemplates:
       - path: Movies
     info:
       path: Movies/SupportFiles/Info.plist
+      properties:
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
     settings:
       base:
         TARGETED_DEVICE_FAMILY: 1

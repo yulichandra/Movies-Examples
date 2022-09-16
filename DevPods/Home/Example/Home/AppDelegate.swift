@@ -1,29 +1,22 @@
 //
 //  AppDelegate.swift
-//  Movies
+//  Mantap
 //
-//  Created by Yuli Chandra on 07/09/22.
+//  Created by herlianzhang on 09/16/2022.
+//  Copyright (c) 2022 herlianzhang. All rights reserved.
 //
 
 import UIKit
+import Home
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var coordinator: MainCoordinator?
+    var coordinator: HomeCoordinator?
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-#if DEBUG
-    print("This is the STDevelopment scheme, using Development configuration with Development.xcconfig")
-  #endif
-        
-  #if RELEASE
-    print("This is the STProduction scheme, using Production configuration with Production.xcconfig")
-  #endif
-        print(Bundle.main.bundleIdentifier)
-        
         let navController = UINavigationController()
-        coordinator = MainCoordinator(navigationController: navController)
+        coordinator = HomeCoordinator(navigationController: navController)
         coordinator?.start()
         
         window = UIWindow(frame: UIScreen.main.bounds)

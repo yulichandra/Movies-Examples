@@ -34,9 +34,11 @@ DerivedData
 
 ## Project generated
 *.xcodeproj/*
+DevPods/**/Example/*.xcodeproj/*
 
 # Add this line if you want to avoid checking in source code from the Xcode workspace
 *.xcworkspace
+DevPods/**/Example/*.xcworkspace
 
 ## Various settings
 *.pbxuser

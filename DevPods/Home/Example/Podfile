@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+def core
+  pod 'CoreUI', :path => '../../CoreUI'
+  pod 'CoreNetwork', :path => '../../CoreNetwork'
+  pod 'CoreUtils', :path => '../../CoreUtils', :modular_headers => true
+end
+
+target 'Home' do
+  use_frameworks! :linkage => :static
+  core
+end
+
+target 'Home_Example' do
+  use_frameworks! :linkage => :static
+  
+  pod 'Home', :path => '../'
+end

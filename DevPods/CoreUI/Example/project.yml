@@ -1,0 +1,8 @@
+name: CoreUI
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: coreui.example
+targets:
+  CoreUI:
+    sources: ../CoreUI/Module
+    platform: iOS
+    type: framework

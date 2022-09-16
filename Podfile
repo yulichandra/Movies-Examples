@@ -2,14 +2,22 @@
 platform :ios, '13.0'
 use_frameworks!
 
-def external
-  pod 'Moya'
+def core
+  pod 'CoreUI', :path => 'DevPods/CoreUI'
+  pod 'CoreNetwork', :path => 'DevPods/CoreNetwork'
+  pod 'CoreUtils', :path => 'DevPods/CoreUtils'
+end
+
+def feature
+  pod 'Home', :path => 'DevPods/Home'
 end
 
 target 'Movies' do
-  external
+  core
+  feature
 end
 
 target 'Movies Dev' do
-  external
+  core
+  feature
 end

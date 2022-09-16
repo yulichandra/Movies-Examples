@@ -1,7 +1,7 @@
 name: Movies
 
 options:
-  minimumXcodeGenVersion: 2.26.0
+  minimumXcodeGenVersion: 2.16.0
   groupSortPosition: top
   generateEmptyDirectories: true
   deploymentTarget:

@@ -1,0 +1,8 @@
+name: CoreNetwork
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: corenetwork.example
+targets:
+  CoreNetwork:
+    sources: ../CoreNetwork/Module
+    platform: iOS
+    type: framework

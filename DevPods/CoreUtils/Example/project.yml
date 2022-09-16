@@ -1,0 +1,8 @@
+name: CoreUtils
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: coreutils.example
+targets:
+  CoreUtils:
+    sources: ../CoreUtils/Module
+    platform: iOS
+    type: framework

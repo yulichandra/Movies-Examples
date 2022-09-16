@@ -1,0 +1,17 @@
+name: Home
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: home.example
+targets:
+  Home:
+    sources: ../Home/Module
+    platform: iOS
+    type: framework
+  Home_Example:
+    sources: Home
+    platform: iOS
+    type: application
+    info:
+      path: Home/Info.plist
+      properties:
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
